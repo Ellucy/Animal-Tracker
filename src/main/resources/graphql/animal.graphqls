@@ -7,6 +7,7 @@ type Animal {
 
 type Query {
     findAllAnimals: [Animal]!
+    findAnimalById(id:ID!) : Animal
 }
 
 type Mutation {
