@@ -1,0 +1,16 @@
+type Animal {
+    id: ID!
+    name: String!
+    breed: String!
+    gender : String!
+}
+
+type Query {
+    findAllAnimals: [Animal]!
+}
+
+type Mutation {
+    newAnimal(name: String!, breed: String!, gender: String!) : Animal!
+    deleteAnimal(id:ID!) : Boolean
+    updateAnimalName(newName: String!, id:ID!) : Animal!
+}
