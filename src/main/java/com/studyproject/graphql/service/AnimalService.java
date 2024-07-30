@@ -7,7 +7,10 @@ import java.util.Optional;
 
 public interface AnimalService {
     List<Animal> retrieveAllAnimals();
+
     Optional<Animal> retrieveAnimalById(Long id);
+
     List<String> retrieveAnimalBreeds();
+
     List<String> retrieveAnimalNames();
 }

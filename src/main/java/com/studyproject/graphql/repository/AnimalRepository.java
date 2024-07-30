@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface AnimalRepository extends JpaRepository<Animal, Long> {
 
-    @Query(value = "SELECT DISTINCT breed FROM animal", nativeQuery = true)
+    @Query("SELECT DISTINCT a.breed FROM Animal a")
     List<String> findAllBreeds();
 
     @Query("SELECT a.name FROM Animal a")

@@ -13,5 +13,6 @@ type Query {
 type Mutation {
     newAnimal(name: String!, breed: String!, gender: String!) : Animal!
     deleteAnimal(id:ID!) : Boolean
+    deleteAnimalByBreed(breed: String!) : Boolean
     updateAnimalName(newName: String!, id:ID!) : Animal!
 }

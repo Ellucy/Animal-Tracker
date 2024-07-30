@@ -10,7 +10,7 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class AnimalServiceImpl implements AnimalService{
+public class AnimalServiceImpl implements AnimalService {
 
     private final AnimalRepository animalRepository;
 
